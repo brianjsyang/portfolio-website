@@ -8,11 +8,23 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+      fontFamily: {
+        title: ['var(--font-sintony)'],
+        body: ['var(--font-poppins)'],
+      }
+    },
+
+    container: {
+      center: true,
+    },
+
+    // generated with realtimecolors.com!
+    colors: {
+      'paragraph': '#0e0e0b',
+      'background': '#fafaf9',
+      'primary': '#798268',
+      'secondary': '#b4c4b9',
+      'accent': '#95aba5',
     },
   },
   plugins: [],
