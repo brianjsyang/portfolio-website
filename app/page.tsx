@@ -1,5 +1,5 @@
 /**
- * Just building simple layout - mostly focusing on showing off the project I've worked on so far.
+ * Just building simple layout - mostly focusing on showing off the project I have worked on so far.
  * 
  * Tailwind default breakpoints
  * sm: 640px
@@ -7,6 +7,8 @@
  * lg: 1024px
  * xl: 1280px
  * 2xl: 1536px
+ * 
+ * note: Build failed due to not-escaped apostrophe ... need to be more careful about that
  */
 
 
@@ -14,7 +16,7 @@ export default function Home() {
   return (
     <main className="bg-background">
       <section className="pt-36 pb-10 px-5">
-        <h1 className="font-title text-8xl text-center text-primary leading-normal">Hello, I'm Brian.</h1>
+        <h1 className="font-title text-8xl text-center text-primary leading-normal">Hello, I&apos;m Brian.</h1>
         <h1 className="font-title text-8xl text-center text-primary leading-normal">Web Developer in Vancouver</h1>
         <h2 className="font-title text-5xl text-center text-secondary leading-normal">Aspiring to become a Full Stack one day!</h2>
       </section>
