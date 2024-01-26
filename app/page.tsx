@@ -10,28 +10,66 @@
  * 
  * note: Build failed due to not-escaped apostrophe ... need to be more careful about that
  */
+import FooterBlock from "@/app/ui/footer"
+import ProjectBlock from "@/app/ui/project-block"
+import { Project } from "@/app/lib/definitions"
+
+
+// define all of my projects here
+const projects: Project[] = [
+  { // Anthonly Drlje Website
+    name: 'Anthony Drlje Realtor Website',
+    url: 'https://www.anthonydrlje.com/',
+    source: 'Brixwork',
+    imgPath: ['/anthonydrlje/1.png'],
+  },
+  { // Suzanne Pennell Website
+    name: 'Suzanne Pennell Realtor Website',
+    url: 'https://www.suzannepennell.com/',
+    source: 'Brixwork',
+    imgPath: ['/suzannepennell/1.png'],
+  }
+]
 
 
 export default function Home() {
   return (
     <main className="bg-background">
-      <section className="pt-36 pb-10 px-5">
-        <h1 className="font-title text-8xl text-center text-primary leading-normal">Hello, I&apos;m Brian.</h1>
-        <h1 className="font-title text-8xl text-center text-primary leading-normal">Web Developer in Vancouver</h1>
-        <h2 className="font-title text-5xl text-center text-secondary leading-normal">Aspiring to become a Full Stack one day!</h2>
+      <section className="pt-36 pb-10 px-10">
+        <h1 className="font-title text-4xl md:text-6xl lg:text-8xl text-center text-primary md:leading-normal">Hello, I&apos;m Brian.</h1>
+        <h1 className="font-title text-4xl md:text-6xl lg:text-8xl text-center text-primary md:leading-normal">Web Developer in Vancouver</h1>
       </section>
       
 
-      <section className="container-xl py-60">
-        <h6 className="font-body text-2xl text-center text-paragraph leading-normal">The website is currently underconstruction. Please come back again later!</h6>
+      <section className="xl:container pt-32 pb-20 px-8 md:px-16 lg:pt-52 lg:px-32">
+        <h2 className="font-title text-2xl lg:text-3xl text-primary leading-normal pb-10">Here are quick overview of my past projects!</h2>
+
+        <div className="flex flex-col gap-y-10 lg:gap-y-20">
+          { // Loop through the project array and display all of them!
+            projects.map((eachProject, key) => (
+              <ProjectBlock project={eachProject} key={key}/>
+            ))
+          }
+        </div>
       </section>
 
-      <footer className="bg-primary p-10 mt-20">
-        {/* Convert this to an array so i dont have to add css for each one. */}
-        <a className="text-center font-body text-background block w-min m-auto" href="https://www.brianjsyang.ca">brianjsyang.ca</a> {/* Add website icon? */}
-        <a className="text-center font-body text-background block w-min m-auto" href="https://www.linkedin.com/in/brianjsyang/">linkedin.com/in/brianjsyang</a> {/* Add a LinkedIn Icon */}
-        <a className="text-center font-body text-background block w-min m-auto" href="https://github.com/brianjsyang/">brianjsyang</a> {/* TODO: Add a Github icon before the name */}
-      </footer>
+      {/**
+       * After the projects, display my cover letter
+       * Comfortable languges? 
+       * 
+       * Also show the tools I used for this website, showing interest in learning new things,
+       * Always on the lookout for the new and modern stuff
+       * Framework:
+       * 1. Next.js
+       * 2. TailWindCss
+       * 3. Anime.js?
+       * 
+       * Tools used 
+       * 1. Font Pair
+       * 2. Real Time Colors
+       */}
+      
+      <FooterBlock />
     </main>
   )
 }
