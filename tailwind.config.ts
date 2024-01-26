@@ -11,6 +11,16 @@ const config: Config = {
       fontFamily: {
         title: ['var(--font-sintony)'],
         body: ['var(--font-poppins)'],
+      },
+      borderRadius: {
+        '20' : '20px'
+      },
+      minHeight: {
+        'card' : '15rem',
+        'card-lg' : '30rem'
+      },
+      boxShadow: {
+        'card': '2px 2px 15px 0 rgba(210, 210, 210, .4)',
       }
     },
 
@@ -25,6 +35,7 @@ const config: Config = {
       'primary': '#798268',
       'secondary': '#b4c4b9',
       'accent': '#95aba5',
+      'off-white': '#f1f1f1',
     },
   },
   plugins: [],
