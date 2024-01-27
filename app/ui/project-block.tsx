@@ -12,12 +12,20 @@ export default function ProjectBlock({ project }: { project: Project;}) {
       </div>
 
       <div className="p-10 lg:w-1/3 lg:order-1">
-        <h2 className="font-body text-xl pb-5">{project.name} - {project.source}</h2>
+        <h2 className="font-title text-paragraph text-xl pb-2">{project.name}</h2>
+        <h4 className="font-body text-paragraph text-lg pb-5">{project.source}</h4>
+
+        <ul className="pb-5">
+          {project.desc.map((value, index) => (
+            <li className="font-body text-paragraph list-disc ml-5 mb-2" key={index}>{value}</li>
+          ))}
+        </ul>
+
         <a className="font-body text-lg w-min mt-5 underline text-accent" href={project.url} target="_blank">Link to the project</a>
       </div>
     </div>
   )
-  }
+}
 
   /**
    * Some ideas

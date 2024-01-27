@@ -21,7 +21,7 @@ const poppins = Poppins({
 // set meta data for the entire site.
 export const metadata: Metadata = {
   title: "Brian Yang - Front End Developer",
-  description: "Learning new things everyday - with devoted attention to detail",
+  description: "Learning new things everyday",
 };
 
 
