@@ -17,7 +17,7 @@ export default function Projects() {
                 }
             </div>
 
-            <h4 className="font-body text-xl text-secondary pt-20">Obviously, there are more ... I would love to talk about them in person! (or on the phone)</h4>
+            <h4 className="font-body text-xl text-secondary pt-16">Obviously, there are more ... I would love to talk about them in person! (or on the phone)</h4>
         </div>
     )
 }

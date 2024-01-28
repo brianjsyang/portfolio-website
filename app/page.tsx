@@ -20,11 +20,11 @@ export default function Home() {
   return (
     <main>
       <section className="pt-36 lg:pt-56 pb-10 px-10">
-        <h1 className="font-title text-4xl leading-normal md:text-6xl md:leading-normal lg:text-8xl lg:leading-normal text-center text-primary">Hello, <a href="https://www.linkedin.com/in/brianjsyang/" target="_blank" className="underline">I&apos;m Brian.</a></h1>
+        <h1 className="font-title text-4xl leading-normal md:text-6xl md:leading-normal lg:text-8xl lg:leading-normal text-center text-primary">Hello, <a href="https://www.linkedin.com/in/brianjsyang/" target="_blank" className="underline transition hover:text-secondary">I&apos;m Brian.</a></h1>
         <h1 className="font-title text-4xl leading-normal md:text-6xl md:leading-normal lg:text-8xl lg:leading-normal text-center text-primary">Web Developer in Vancouver</h1>
       </section>
       
-      <section className="2xl:container pt-32 pb-20 px-8 md:px-16 lg:pt-52 lg:px-24 xlg:px-32 2xl:px-44">
+      <section className="2xl:container pt-32 pb-20 px-8 md:px-16 lg:pt-52 lg:px-24 xl:px-32">
         <div className="md:max-w-screen-md md:m-auto lg:max-w-full lg:m-0">
           {/* Projects Section */}
           <Projects />

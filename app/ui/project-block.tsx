@@ -24,7 +24,7 @@ export default function ProjectBlock({ project }: { project: Project;}) {
           ))}
         </ul>
 
-        <a className="font-body text-lg w-min mt-5 underline text-accent" href={project.url} target="_blank">Link to the project</a>
+        <a className="font-body text-lg w-min mt-5 underline text-accent transition hover:text-secondary" href={project.url} target="_blank">Link to the project</a>
       </div>
     </div>
   )
