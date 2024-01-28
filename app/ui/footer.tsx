@@ -9,10 +9,10 @@ export default function FooterBlock() {
                 
             </div>
 
-            <div className="bg-primary pt-12 pb-6">
+            <div className="bg-primary pt-14 pb-12">
                 <div className="w-min m-auto">
-                    <a className="font-body text-background w-min flex gap-2 items-center transition hover:text-accent" href="https://www.linkedin.com/in/brianjsyang/" target="_blank"><FontAwesomeIcon icon={faLinkedin} />linkedin.com/in/brianjsyang</a>
-                    <a className="font-body text-background w-min flex gap-2 items-center transition hover:text-accent" href="https://github.com/brianjsyang/" target="_blank"><FontAwesomeIcon icon={faGithub} /> brianjsyang</a>
+                    <a className="font-body text-base text-background w-min flex gap-2 items-center transition hover:text-accent" href="https://www.linkedin.com/in/brianjsyang/" target="_blank"><FontAwesomeIcon icon={faLinkedin} />linkedin.com/in/brianjsyang</a>
+                    <a className="font-body text-base text-background w-min flex gap-2 items-center transition hover:text-accent" href="https://github.com/brianjsyang/" target="_blank"><FontAwesomeIcon icon={faGithub} />brianjsyang</a>
 
                     <h6 className="font-title text-xs pt-10 pb-2 text-background">This website was built with the help of...</h6>
                     <ul className="columns-2 font-body whitespace-nowrap text-xs text-background">
