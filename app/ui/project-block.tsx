@@ -3,6 +3,8 @@
  */
 import { Project } from "@/app/lib/definitions";
 import Image from 'next/image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
 export default function ProjectBlock({ project }: { project: Project;}) {
   let alt_string = `${project.name} screenshot`;
@@ -18,9 +20,12 @@ export default function ProjectBlock({ project }: { project: Project;}) {
         <h2 className="font-title text-paragraph text-xl pb-1">{project.name}</h2>
         <h4 className="font-body text-secondary text-lg pb-5">{project.source}</h4>
 
-        <ul className="pb-5">
+        <ul className="fa-ul pb-5">
           {project.desc.map((value, index) => (
-            <li className="font-body text-paragraph list-disc ml-5 mb-2" key={index}>{value}</li>
+            <li className="font-body text-paragraph mb-2" key={index}>
+              <span className="fa-li"><FontAwesomeIcon className="text-secondary" icon={faCircleCheck} /></span>
+              {value}
+            </li>
           ))}
         </ul>
 
