@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${sintony.variable} ${poppins.variable}`}>
+      <body className={`${sintony.variable} ${poppins.variable} bg-background`}>
           {children}
       </body>
     </html>
