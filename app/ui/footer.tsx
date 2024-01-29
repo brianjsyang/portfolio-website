@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function FooterBlock() {
@@ -11,6 +12,7 @@ export default function FooterBlock() {
 
             <div className="bg-primary pt-14 pb-12">
                 <div className="w-min m-auto">
+                    <a className="font-body text-base text-background w-min flex gap-2 items-center transition hover:text-accent" href="mailto:brianjsyang@gmail.com"><FontAwesomeIcon icon={faEnvelope} />brianjsyang@gmail.com</a>
                     <a className="font-body text-base text-background w-min flex gap-2 items-center transition hover:text-accent" href="https://www.linkedin.com/in/brianjsyang/" target="_blank"><FontAwesomeIcon icon={faLinkedin} />linkedin.com/in/brianjsyang</a>
                     <a className="font-body text-base text-background w-min flex gap-2 items-center transition hover:text-accent" href="https://github.com/brianjsyang/" target="_blank"><FontAwesomeIcon icon={faGithub} />brianjsyang</a>
 
