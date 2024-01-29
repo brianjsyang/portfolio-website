@@ -9,6 +9,9 @@ config.autoAddCss = false
 // import the Google fonts.
 import { Sintony, Poppins } from "next/font/google";
 
+// vercel analytics
+import { Analytics } from "@vercel/analytics/react";
+
 const sintony = Sintony({
   weight: "400",
   subsets: ['latin'],
@@ -40,6 +43,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${sintony.variable} ${poppins.variable} bg-background`}>
           {children}
+          <Analytics />
       </body>
     </html>
   );
