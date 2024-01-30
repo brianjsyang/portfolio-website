@@ -30,6 +30,10 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Brian Yang - Front End Developer",
   description: "Learning new things everyday",
+  openGraph: {
+    title: "Brian Yang - Front End Developer",
+    description: "Learning new things everyday"
+  }
 };
 
 
