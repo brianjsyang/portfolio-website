@@ -28,11 +28,13 @@ const poppins = Poppins({
 
 // set meta data for the entire site.
 export const metadata: Metadata = {
+  metadataBase: new URL('https://brianjsyang.ca'),
   title: "Brian Yang - Front End Developer",
   description: "More about me and my past projects! Learning new things everyday",
   openGraph: {
     title: "Brian Yang - Front End Developer",
-    description: "More about me and my past projects! Learning new things everyday"
+    description: "More about me and my past projects! Learning new things everyday",
+    images: '/opengraph-image.png'
   }
 };
 
