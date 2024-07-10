@@ -2,6 +2,29 @@ import { Project, Experience } from "@/app/lib/definitions"
 
 // define all of my projects here
 export const projects: Project[] = [
+  { // North Shore Real Estate Team
+    name: 'North Shore Real Estate Team',
+    url: 'https://www.northshorerealestateteam.com/',
+    source: 'Brixwork',
+    imgPath: ['/northshoreteam/1.png'],
+    desc: [
+      'PHP, JavaScript, Bootstrap, AJAX, MySQL',
+      'Unique search form that looks like sentences',
+      'Community pages with Google Maps integration to draw city polygons',
+      'Various JavaScript animations across the pages',
+    ]
+  },
+  { // Karim Bhatia Project
+    name: 'Karim Bhatia Realtor Website',
+    url: 'https://www.karimbhatia.com/',
+    source: 'Brixwork',
+    imgPath: ['/karimbhatia/1.png'],
+    desc: [
+      'PHP, JavaScript, Bootstrap, AJAX, MySQL',
+      'Custom-designed website tailored to client\'s brand',
+      'Various JavaScript animations across the pages',
+    ]
+  },
   { // Anthonly Drlje Website
     name: 'Anthony Drlje Realtor Website',
     url: 'https://www.anthonydrlje.com/',
