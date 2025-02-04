@@ -2,6 +2,17 @@ import { Project, Experience } from "@/app/lib/definitions"
 
 // define all of my projects here
 export const projects: Project[] = [
+  { // Nest Presales
+    name: 'Nest Presales',
+    url: 'https://www.nestpresales.com/',
+    source: 'Brixwork',
+    imgPath: ['/nestpresales/1.png'],
+    desc: [
+      'GSAP, JS, Bootstrap, PHP',
+      'Extensive animations to catch user\'s eyes.',
+      'Completely unique and custom Presale filter feature, built to client\'s requirements'
+    ]
+  },
   { // North Shore Real Estate Team
     name: 'North Shore Real Estate Team',
     url: 'https://www.northshorerealestateteam.com/',
